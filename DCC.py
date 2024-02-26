@@ -4,7 +4,6 @@ import socket
 import deb
 
 deb.clear()
-#OTc0NTEwMjMwODgyODkzODQ2.GeBsox.4p6U5OHfBu5_X-A9zm1aEgp9kM9nDTC9pbPkqk
 
 def msgsend(headers):
     texto=deb.inputx("[Discord] pon el mensaje:")
