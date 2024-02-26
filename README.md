@@ -1,10 +1,10 @@
 # Discord Client Controller
 
-Bienvenido al repositorio de Discord Client Controller, una herramienta poderosa y flexible para interactuar con Discord como un usuario a través de un script de Python.
+Discord Client Controller una herramienta poderosa y flexible para interactuar con Discord como un usuario a través de un script de Python.
 
 ## Descripción
 
-Este proyecto permite controlar un usuario de Discord como si fuera un bot, utilizando el token del usuario y enviando solicitudes con parámetros específicos utilizando la biblioteca `requests` de Python. 
+Este proyecto permite controlar un usuario de Discord (desde la terminal), utilizando el token del usuario y enviando solicitudes con parámetros específicos utilizando la biblioteca `requests` de Python. 
 
 ## Características
 
