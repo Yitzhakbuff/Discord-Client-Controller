@@ -6,6 +6,10 @@ Discord Client Controller una herramienta poderosa y flexible para interactuar c
 
 Este proyecto permite controlar un usuario de Discord (desde la terminal), utilizando el token del usuario y enviando solicitudes con parámetros específicos utilizando la biblioteca `requests` de Python. 
 
+## Descripción grafica
+
+https://cdn.discordapp.com/attachments/1211469554388045896/1211811181249957888/image.png?ex=65ef8e1b&is=65dd191b&hm=85ff8ee1a0ecaf4f40635da3055fdb576b555840f14325b7acc6325ccd4ac363&
+
 ## Características
 
 Las características actuales incluyen:
@@ -33,5 +37,3 @@ Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta e
 Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en abrir un problema en este repositorio.
 
-
-Espero que esto te ayude. Si tienes más preguntas, no dudes en hacerlas. 😊
