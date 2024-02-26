@@ -8,7 +8,7 @@ Este proyecto permite controlar un usuario de Discord (desde la terminal), utili
 
 ## Descripción grafica
 
-https://cdn.discordapp.com/attachments/1211469554388045896/1211811181249957888/image.png?ex=65ef8e1b&is=65dd191b&hm=85ff8ee1a0ecaf4f40635da3055fdb576b555840f14325b7acc6325ccd4ac363&
+![](https://cdn.discordapp.com/attachments/1211469554388045896/1211811181249957888/image.png?ex=65ef8e1b&is=65dd191b&hm=85ff8ee1a0ecaf4f40635da3055fdb576b555840f14325b7acc6325ccd4ac363&)
 
 ## Características
 
@@ -24,8 +24,8 @@ Las características actuales incluyen:
 Para utilizar este proyecto, necesitarás tener Python instalado en tu sistema. Luego, puedes clonar este repositorio y ejecutar el script principal.
 
 ```bash
-git clone https://github.com/tu_usuario/discord-client-controller.git
-cd discord-client-controller
+git clone https://github.com/CodeyByte/Discord-Client-Controller.git
+cd Discord-Client-Controller
 python main.py
 
 Contribuir
