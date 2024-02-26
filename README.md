@@ -8,7 +8,7 @@ Este proyecto permite controlar un usuario de Discord (desde la terminal), utili
 
 ## Descripción grafica
 
-![](https://cdn.discordapp.com/attachments/1211469554388045896/1211811181249957888/image.png?ex=65ef8e1b&is=65dd191b&hm=85ff8ee1a0ecaf4f40635da3055fdb576b555840f14325b7acc6325ccd4ac363&)
+![](https://cdn.discordapp.com/attachments/1211469554388045896/1211813869178327100/image.png?ex=65ef909c&is=65dd1b9c&hm=9d103120b57af44f6a558be558a82edf1efc7403cc29b6cd72c55840a6eaeabe&)
 
 ## Características
 
