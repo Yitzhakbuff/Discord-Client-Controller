@@ -39,10 +39,10 @@ def silencefriends(headers):
     for usuario in r.json():
         requests.delete(f"https://discord.com/api/v9/channels/{usuario['id']}?silent=false", headers=headers)
     input()
-    main_commands()
+    main_commands(headers=headers)
 
 
-def main_commands():
+def main_commands(headers):
     deb.clear()
     print("\033[1;36;40m Lista de Comandos \033[0m")
     print("\033[1;35;40m-------------------\033[0m")
@@ -64,15 +64,15 @@ def main_commands():
 def main():
     deb.clear()
     token = deb.inputx("[Discord] pon el token: ")
-    headers = {'Authorization': f"{token}"}
     deb.info("Conectandose al cliente...")
-    response = requests.get("https://discord.com/api/v9/users/@me", headers=headers)
+    client = {'Authorization': f"{token}"}
+    response = requests.get("https://discord.com/api/v9/users/@me", headers=client)
     deb.debug(response=response)
     if response.status_code == 200:
         data = response.json()
         deb.info(f"Conectado al cliente: \033[1;36;40m{data.get('global_name')}\033[0m (\033[1;35;40m{data.get('username')}\033[0m)")
         deb.info("Haga click para entrar a la sala de comandos \033[1;36;10m[Presiona cualquier tecla]")
         input()
-        main_commands()
+        main_commands(headers=client)
     else:
         deb.error("No se pudo conectar.")
