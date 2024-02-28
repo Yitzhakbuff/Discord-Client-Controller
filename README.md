@@ -13,7 +13,7 @@ git clone https://github.com/CodeyByte/Discord-Client-Controller.git
 
 cd Discord-Client-Controller
 
-pip install requirements.txt
+pip install -r requirements.txt
 
 ```
 
