@@ -3,8 +3,6 @@ import os
 import socket
 import deb
 
-deb.clear()
-
 def msgsend(headers):
     texto=deb.inputx("[Discord] pon el mensaje:")
     canal_id=deb.inputx("[Discord] pon el id del canal:")
@@ -63,17 +61,18 @@ def main_commands():
     if entrada == "5":
         silencefriends(headers=headers)
         
-        
-token = deb.inputx("[Discord] pon el token: ")
-headers = {'Authorization': f"{token}"}
-deb.info("Conectandose al cliente...")
-response = requests.get("https://discord.com/api/v9/users/@me", headers=headers)
-deb.debug(response=response)
-if response.status_code == 200:
-    data = response.json()
-    deb.info(f"Conectado al cliente: \033[1;36;40m{data.get('global_name')}\033[0m (\033[1;35;40m{data.get('username')}\033[0m)")
-    deb.info("Haga click para entrar a la sala de comandos \033[1;36;10m[Presiona cualquier tecla]")
-    input()
-    main_commands()
-else:
-    deb.error("No se pudo conectar.")
+def main():
+    deb.clear()
+    token = deb.inputx("[Discord] pon el token: ")
+    headers = {'Authorization': f"{token}"}
+    deb.info("Conectandose al cliente...")
+    response = requests.get("https://discord.com/api/v9/users/@me", headers=headers)
+    deb.debug(response=response)
+    if response.status_code == 200:
+        data = response.json()
+        deb.info(f"Conectado al cliente: \033[1;36;40m{data.get('global_name')}\033[0m (\033[1;35;40m{data.get('username')}\033[0m)")
+        deb.info("Haga click para entrar a la sala de comandos \033[1;36;10m[Presiona cualquier tecla]")
+        input()
+        main_commands()
+    else:
+        deb.error("No se pudo conectar.")
