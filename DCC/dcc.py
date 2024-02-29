@@ -9,7 +9,7 @@ def msgsend(headers):
     r=requests.post(f"https://discord.com/api/v9/channels/{canal_id}/messages", headers=headers, data={"content":texto})
     deb.debug(response=r)
     input()
-    main_commands()
+    main_commands(headers=headers)
 def typing(headers):
     canal_id=deb.inputx("[Discord] pon el id del canal:")
     r=requests.post(f"https://discord.com/api/v9/channels/{canal_id}/typing", headers=headers)
@@ -22,13 +22,13 @@ def pinmsg(headers):
     r=requests.put(f"https://discord.com/api/v9/channels/{canal_id}/pins/{msg_id}", headers=headers)
     deb.debug(response=r)
     input()
-    main_commands()
+    main_commands(headers=headers)
 def callring(headers):
     canal_id=deb.inputx("[Discord] pon el id del canal:")
     r=requests.post(f"https://discord.com/api/v9/channels/{canal_id}/call/ring", headers=headers)
     deb.debug(response=r)
     input()
-    main_commands()
+    main_commands(headers=headers)
 def silencefriends(headers):
     r=requests.get(f"https://discord.com/api/v9/users/@me/relationships", headers=headers)
     deb.debug(response=r)
